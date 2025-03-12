@@ -1,5 +1,4 @@
 import Head from "next/head";
-import Image from "next/image";
 import { Geist, Geist_Mono } from "next/font/google";
 import styles from "@/styles/Home.module.css";
 import CycleButton from "./components/cycleButton";
@@ -79,32 +78,7 @@ function Home() {
         className={`${styles.page} ${geistSans.variable} ${geistMono.variable}`}
       >
         <main className={styles.main}>
-          <Image
-            className={styles.logo}
-            src="/logo.svg"
-            alt="Next.js logo"
-            width={180}
-            height={38}
-            priority
-          />
-
-          <div className={styles.ctas}>
-            <a
-              className={styles.primary}
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-              <Image
-                className={styles.logo}
-                src="/vercel.svg"
-                alt="Vercel logomark"
-                width={20}
-                height={20}
-              />
-              Cycle color
-            </a>
-          </div>
-          <div className={styles.ctas}>
+          <div className={styles.logo}>
             <CycleButton colors={colors} />
           </div>
         </main>

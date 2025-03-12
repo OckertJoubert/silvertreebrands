@@ -27,7 +27,7 @@ const CycleButton: FC<CycleButtonProps> = ({ colors }) => {
           }}
           onClick={handleClick}
         >
-          Cycle color
+          Cycle
         </a>
       </div>
     </>
